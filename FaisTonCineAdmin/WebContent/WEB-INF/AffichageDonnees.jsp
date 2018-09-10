@@ -6,8 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link type="text/css" rel="stylesheet" href="CSS/Form.css" />
-<script type="text/javascript"
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
 <title>Insert title here</title>
 </head>
@@ -22,11 +21,19 @@
 		<div class="tri">
 			<p id="trierPar">Trier par :</p>
 			<select id="trier">
-			<option></option>
+			<option onclick=affichage_users(0,null,null);>Identifiant</option>
+			<option onclick=affichage_users(0,null,null);>Prénom</option>
+			<option onclick=affichage_users(0,null,null);>Nom</option>
+			<option onclick=affichage_users(0,null,null);>Email</option>
+			<option onclick=affichage_users(0,null,null);>Nombre d'idées</option>
 			</select>
 			<p id="textRecherche">Recherche :</p>
 			<select id="recherche">
-			<option></option>
+			<option>Identifiant</option>
+			<option>Prénom</option>
+			<option>Nom</option>
+			<option>Email</option>
+			<option>Nombre d'idées</option>
 			</select> 
 			<input type="text" id="inputSearch" onchange="">
 			<button id="boutonSearch"></button>
@@ -48,7 +55,8 @@
 			})
 		});
 	</script>
-
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" charset="UTF-8" src="http://localhost:8080/FaisTonCineAdmin/Idea.js"></script>
 	<script type="text/javascript" charset="UTF-8" src="http://localhost:8080/FaisTonCineAdmin/User.js"></script>
 

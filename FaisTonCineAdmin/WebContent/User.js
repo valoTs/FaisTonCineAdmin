@@ -1,4 +1,10 @@
-$(document).ready(affichage_users(0));	
+$(document).ready(function(){
+	var selectSearch = document.getElementById("recherche");
+	var indiceSearch = selectSearch.selectedIndex;
+	var libelleRecherche = selectSearch.options[indiceSearch].value;
+	var inputSearch = document.getElementById("inputSearch").value;
+	affichage_users(0,libelleRecherche,inputSearch);
+});	
 
 
 						
